@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFEAF2;
+    font-family: 'Nunito', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.calculadora {
+    width: 330px;
+    background: #FFFFFF;
+    padding: 22px;
+
+    border: 4px solid #FFB7D5;
+    border-radius: 28px;
+
+    box-shadow: 0 12px 30px #EFA8C455;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #E86B9D;
+}
+
+.lacinho {
+    font-size: 35px;
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 12px;
+    color: #D88BAA;
+}
+
+.visor {
+    background: #FFF0F6;
+    border: 2px solid #FFD0E3;
+    border-radius: 17px;
+
+    padding: 15px;
+    margin-bottom: 18px;
+
+    text-align: right;
+    min-height: 85px;
+    overflow: hidden;
+}
+
+#operacao {
+    color: #C98BA5;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+#resultado {
+    color: #B84F7B;
+    font-size: 30px;
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 55px;
+    border: none;
+    border-radius: 15px;
+
+    background: #FFF0F6;
+    color: #A94F76;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 19px;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #FFD0E3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.94);
+}
+
+.especial {
+    background: #FFD7E7;
+}
+
+.operador {
+    background: #F7A9C9;
+    color: white;
+}
+
+.igual {
+    grid-column: span 2;
+    background: #E96D9F;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 18px;
+    color: #D88BAA;
+    font-size: 12px;
+}
+
+.decoracao {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    vertical-align: middle;
+}
